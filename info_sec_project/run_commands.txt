@@ -1,0 +1,53 @@
+✅ Step-by-Step: Install Paho MQTT C Library from Source
+🔹 Step 1: Install Build Dependencies
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install cmake gcc g++ make libssl-dev
+🔹 Step 2: Clone the Paho MQTT C Repo
+bash
+Copy
+Edit
+cd ~
+git clone https://github.com/eclipse/paho.mqtt.c.git
+cd paho.mqtt.c
+🔹 Step 3: Build and Install
+bash
+Copy
+Edit
+cmake -Bbuild -H. -DPAHO_WITH_SSL=TRUE
+cmake --build build/ --target install
+Then update linker paths:
+
+bash
+Copy
+Edit
+sudo ldconfig
+🔹 Step 4: Verify Installation
+Headers should be in: /usr/local/include/
+Libs should be in: /usr/local/lib/
+
+You can now compile your C MQTT apps like this:
+
+bash
+Copy
+Edit
+gcc secure_publisher.c cipher.c -lpaho-mqtt3c -o publisher
+Add -I/usr/local/include -L/usr/local/lib if needed.
+
+sudo systemctl start mosquitto
+
+For spongent:
+gcc pub_spongent.c spongent.c -o pub_spongent -lpaho-mqtt3c 
+gcc sub_spongent.c spongent.c -o sub_spongent -lpaho-mqtt3c
+
+
+For Photon_Beetle
+gcc pub_photon.c photon_beetle.c -lpaho-mqtt3c -o publisher
+gcc sub_photon.c photon_beetle.c -lpaho-mqtt3c -o subscriber
+
+
+For Quark
+gcc pub.c quark.c -lpaho-mqtt3c -o publisher
+gcc sub.c -lpaho-mqtt3c -o subscriber

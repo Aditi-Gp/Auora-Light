@@ -1,0 +1,110 @@
+QUARK
+
+publisher
+
+===== QUARK ENCRYPTION METRICS =====
+Algorithm        : Quark AEAD
+Message Size     : 18 bytes
+Execution Time   : 0.000034 seconds
+Throughput       : 529411.76 bytes/sec
+Static RAM Usage : 88 bytes
+Ciphertext: 07E92A20A245ECAC3E14AC0495027BA978E0
+Tag: 9186B5B4A6E1AF1E
+Published encrypted message.
+
+
+subscriber
+Encrypted payload received (26 bytes):
+
+===== RECEIVER METRICS (NO DECRYPTION) =====
+Message Size     : 26 bytes
+Execution Time   : 0.000020 seconds
+Throughput       : 1300000.00 bytes/sec
+Static RAM Usage : 8 bytes
+Encrypted Payload: 07E92A20A245ECAC3E14AC0495027BA978E09186B5B4A6E1AF1E
+
+
+
+Photon_Beetle
+
+publisher
+===== PHOTON-BEETLE ENCRYPTION METRICS =====
+Message Size     : 25 bytes
+Execution Time   : 0.000154 seconds
+Throughput       : 162337.66 bytes/sec
+Static RAM Usage : 168 bytes
+Ciphertext: 7E484557414202654D4456474C0D76431ABDB372EE8335A5EC
+Tag: 9ABDB37244833EAE455D9F5751ED7F53
+Published encrypted Photon-Beetle message.
+
+
+subscriber
+Encrypted payload received (41 bytes):
+
+===== RECEIVER METRICS (NO DECRYPTION) =====
+Ciphertext Size  : 25 bytes
+Execution Time   : 0.000014 seconds
+Throughput       : 1785714.29 bytes/sec
+Ciphertext: 7E484557414202654D4456474C0D76431ABDB372EE8335A5EC
+Tag: 9ABDB37244833EAE455D9F5751ED7F53
+^C
+
+
+SPONGENT
+
+publisher
+===== SPONGENT HASH METRICS =====
+Message          : Integrity Check via SPONGENT
+Message Size     : 28 bytes
+Hash Size        : 32 bytes
+Execution Time   : 0.013818 seconds
+Throughput       : 2026.34 bytes/sec
+RAM Usage        : 68 bytes
+Hash: 37F8421CA650EED8C034E71C40DFBE5B8CD5479106646015F6E2C013381419AD
+Published SPONGENT hash.
+
+
+
+Subscriber
+Hash received (32 bytes):
+
+===== RECEIVER METRICS =====
+Hash Size        : 32 bytes
+Execution Time   : 0.000154 seconds
+Throughput       : 207792.21 bytes/sec
+RAM Usage        : 8 bytes (approx)
+Received Hash: 37F8421CA650EED8C034E71C40DFBE5B8CD5479106646015F6E2C013381419AD
+
+
+AURORA LIGHT
+Publisher:
+
+===== SENDER METRICS =====
+Algorithm        : Aurora AEAD
+Message Size     : 18 bytes
+Execution Time   : 0.000003 seconds
+Throughput       : 6000000.00 bytes/sec
+Static RAM Usage : 168 bytes
+Ciphertext: 579FC23EAD0FA2D061DEB283AF667017295D
+Tag: F6BB99DC29FF42EA
+Published encrypted message.
+
+
+Subscriber:
+
+===== RECEIVER METRICS (NO DECRYPTION) =====
+Message Size     : 26 bytes
+Execution Time   : 0.000002 seconds
+Throughput       : 13000000.00 bytes/sec
+Static RAM Usage : 26 bytes
+Encrypted Payload: 579FC23EAD0FA2D061DEB283AF667017295DF6BB99DC29FF42EA
+
+===== RECEIVER METRICS (NO DECRYPTION) =====
+Message Size     : 26 bytes
+Execution Time   : 0.000001 seconds
+Throughput       : 26000000.00 bytes/sec
+Static RAM Usage : 26 bytes
+Encrypted Payload: 579FC23EAD0FA2D061DEB283AF667017295DF6BB99DC29FF42EA
+
+
+
