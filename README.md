@@ -39,3 +39,22 @@ Auora-Light is an efficient and secure cryptographic solution specifically desig
 - [Security Considerations](#security-considerations)
 - [Contributing](#contributing)
 - [License](#license)
+
+
+## Requirements
+
+- Python 3.7 or higher (or specify your language/version)
+- Minimal dependencies for IoT compatibility
+- Compatible with popular IoT platforms (Arduino, Raspberry Pi, etc.)
+
+## Installation
+
+### From Source
+
+```bash
+git clone https://github.com/Aditi-Gp/Auora-Light.git
+```
+```bash
+cd Auora-Light
+```
+# Follow platform-specific installation steps
