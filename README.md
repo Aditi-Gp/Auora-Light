@@ -1,6 +1,6 @@
 # Auora-Light
 
-A Lightweight Cryptography Method for IoT Devices
+A Lightweight Cryptography algorithm method for IoT Devices.
 
 ## Overview
 
