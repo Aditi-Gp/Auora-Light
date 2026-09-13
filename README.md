@@ -1,4 +1,4 @@
-# Auora-Light
+# Auora-Light Algorithm
 
 A Lightweight Cryptography algorithm method for IoT Devices.
 
