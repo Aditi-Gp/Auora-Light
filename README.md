@@ -59,4 +59,4 @@ git clone https://github.com/Aditi-Gp/Auora-Light.git
 cd Auora-Light
 ```
 # Follow platform-specific installation steps
-
+To get access to IEEE paper, kindly DM.
